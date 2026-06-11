@@ -142,7 +142,8 @@
 			"set-default-download-dir": "Définir comme dossier de téléchargement par défaut",
 			"upload-file": "Fichier(s) torrents:",
 			"nosource": "Aucun torrent ou URL.",
-			"tip-title": "Le fichier torrent a la priorité sur les URLs si les deux sont présents"
+			"tip-title": "Le fichier torrent a la priorité sur les URLs si les deux sont présents",
+			"sequential-download": "Téléchargement séquentiel:"
 		},
 		"system-config": {
 			"title": "Configuration serveur",
@@ -219,7 +220,8 @@
 				"color": "Couleur",
 				"actions": "Actions",
 				"import-confirm": "Voulez-vous importer les étiquettes? Cela remplacera la configuration courante."
-			}
+			},
+			"sequential_download": "Téléchargement séquentiel par défaut pour les nouveaux torrents"
 		},
 		"public": {
 			"button-ok": "OK",
@@ -396,7 +398,8 @@
 				"seedRatioMode": "Ratio de seed：",
 				"seedIdleMode": "Stopper le torrent après une période d'inactivité de：",
 				"doneDate": "Terminé à:",
-				"seedTime": "Partagé à:"
+				"seedTime": "Partagé à:",
+				"sequential_download": "Téléchargement séquentiel:"
 			},
 			"tip": {
 				"button-allow": "Télécharger le(s) fichier(s) sélectionné(s)",

@@ -142,7 +142,8 @@
 			"set-default-download-dir": "Configurează ca director implicit",
 			"upload-file": "Fişiere Torrent :",
 			"nosource": "Niciun fişier torrent sau URL.",
-			"tip-title": "Încarcărea fişierului torrent file este prioritară comparativ cu torrent URL"
+			"tip-title": "Încarcărea fişierului torrent file este prioritară comparativ cu torrent URL",
+			"sequential-download": "Descărcare secvențială:"
 		},
 		"system-config": {
 			"title": "Configurează Serverul",
@@ -219,7 +220,8 @@
 				"color": "Color",
 				"actions": "Actions",
 				"import-confirm": "Do you want to import labels? This overrides the current configuration."
-			}
+			},
+			"sequential_download": "Descărcare secvențială implicită pentru torrenturi noi"
 		},
 		"public": {
 			"button-ok": "OK",
@@ -396,7 +398,8 @@
 				"seedRatioMode": "Rația pentru încărcare：",
 				"seedIdleMode": "Torrentele la încărcat vor fi oprite dacă sunt inactive pentru：",
 				"doneDate": "Finish Time:",
-				"seedTime": "Seed Time:"
+				"seedTime": "Seed Time:",
+				"sequential_download": "Descărcare secvențială:"
 			},
 			"tip": {
 				"button-allow": "Descărcarea fișierelor bifate",

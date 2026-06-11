@@ -143,7 +143,8 @@
 			"set-default-download-dir": "Establecer como carpeta predeterminada",
 			"upload-file": "Archivos(s) torrent:",
 			"nosource": "Sin torrent o URL.",
-			"tip-title": "Los archivos subidos tienen prioridad sobre las URL's"
+			"tip-title": "Los archivos subidos tienen prioridad sobre las URL's",
+			"sequential-download": "Descarga secuencial:"
 		},
 		"system-config": {
 			"title": "Configuración del servidor",
@@ -225,7 +226,8 @@
 			"export-config": "Exportar configuración actual",
 			"import-config-confirm": "¿Quieres importar estas configuraciones? Esto cambiará la configuración actual.",
 			"script-torrent-done-enabled": "Ejecutar el siguiente script al completar una descarga:",
-                        "ipinfo": "ipinfo.io Token"
+			"ipinfo": "ipinfo.io Token",
+			"sequential_download": "Descarga secuencial por defecto para nuevos torrents"
 		},
 		"public": {
 			"button-ok": "Aceptar",
@@ -312,7 +314,6 @@
 			"title": "Selecciona los datos a importar",
 			"invalid-file": "Perfil no válido"
 		}
-
 	},
 	"torrent": {
 		"fields": {
@@ -379,7 +380,7 @@
 					"1": "Esperando",
 					"2": "En cola",
 					"3": "Activo"
-                                }
+				}
 			},
 			"peers-fields": {
 				"address": "Dirección IP",
@@ -430,7 +431,8 @@
 				"seedRatioMode": "Ratio de subida por torrent：",
 				"seedIdleMode": "Detener compartidos inactivos tras：",
 				"doneDate": "Finish Time:",
-				"seedTime": "Seed Time:"
+				"seedTime": "Seed Time:",
+				"sequential_download": "Descarga secuencial:"
 			},
 			"tip": {
 				"button-allow": "Descargar archivos(s) marcados",

@@ -144,7 +144,8 @@
 			"set-default-download-dir": "Diesen Speicherordner als standard setzen",
 			"upload-file": "Torrent Datei(en):",
 			"nosource": "Keine torrent Datei oder URL.",
-			"tip-title": "Das Hochladen einer Torrent Datei hat Vorrang vor einer URL"
+			"tip-title": "Das Hochladen einer Torrent Datei hat Vorrang vor einer URL",
+			"sequential-download": "Sequenzieller Download:"
 		},
 		"system-config": {
 			"title": "Einstellungen",
@@ -230,7 +231,8 @@
 			"ipInfoCustom": "Zusätzliche Einstellungen für Reverse DNS (WHOIS) Abfrage.",
 			"ipInfoCustomTips": "Verfügbare Variablen: <b>%ip</b>: Peer-IP (erforderlich), <b>%lang</b>: Sprachcode, der von tr-web-control verwendet wird<br/>&nbsp;&nbsp;<b>%host</b>: Host, <b>%hostname</b>: Hostname, <b>%protocol</b>: Protokoll, <b>%navlang</b>: Sprachcode für Navigation",
 			"ipInfoCountryCodeUrl": "URL für Länder Code:",
-			"ipInfoDetailUrl": "URL für Details:"
+			"ipInfoDetailUrl": "URL für Details:",
+			"sequential_download": "Sequenzieller Download für neue Torrents"
 		},
 		"public": {
 			"button-ok": "OK",
@@ -269,15 +271,15 @@
 			"recheck-data": "Daten neu prüfen."
 		},
 		"torrent-changeSpeedLimit": {
-	      		"title": "Festlegen der maximalen Download & Upload Geschwindigkeit für Torrents",		  
-		  	"downloadLimited": "Max globale Download Geschwindigkeit:",
-		  	"uploadLimited": "Max globale Upload Geschwindigkeit:",
-	      		"peer-limit": "Max Peers für diesen Torrent:",
-		  	"seedRatioMode": "Seed Verhältnis für Torrents:",
-		  	"seedIdleMode": "Torrents die wir seeden, werden gestoppt, wenn sie inaktiv sind seit:",
-		  	"doneDate": "beendet am:",
-		  	"seedTime": "gestartet am:"
-	    	},
+			"title": "Festlegen der maximalen Download & Upload Geschwindigkeit für Torrents",
+			"downloadLimited": "Max globale Download Geschwindigkeit:",
+			"uploadLimited": "Max globale Upload Geschwindigkeit:",
+			"peer-limit": "Max Peers für diesen Torrent:",
+			"seedRatioMode": "Seed Verhältnis für Torrents:",
+			"seedIdleMode": "Torrents die wir seeden, werden gestoppt, wenn sie inaktiv sind seit:",
+			"doneDate": "beendet am:",
+			"seedTime": "gestartet am:"
+		},
 		"system-replaceTracker": {
 			"title": "Tracker bearbeiten",
 			"old-tracker": "Alter Tracker:",
@@ -350,7 +352,7 @@
 			"activityDate": "Aktiv seit",
 			"trackers": "Trackers",
 			"labels": "Etikett",
-			"doneDate":"Abgeschlossen"
+			"doneDate": "Abgeschlossen"
 		},
 		"status-text": {
 			"0": "Angehalten",
@@ -444,7 +446,8 @@
 				"seedRatioMode": "Seed Verhältnis für diesen Torrent:",
 				"seedIdleMode": "Torrents die wir seeden, werden gestoppt, wenn sie inaktiv sind seit:",
 				"doneDate": "Beendet:",
-				"seedTime": "Gestartet:"
+				"seedTime": "Gestartet:",
+				"sequential_download": "Sequenzieller Download:"
 			},
 			"tip": {
 				"button-allow": "Gewählte Datei(en) herunterladen",

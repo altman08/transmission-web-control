@@ -142,7 +142,8 @@
 			"set-default-download-dir": "Instellen als standaardmap",
 			"upload-file": "Torrent bestand(en):",
 			"nosource": "Geen torrent bestand of URL.",
-			"tip-title": "Uploaden van het torrent-bestand heeft voorrang boven de URL van de torrent"
+			"tip-title": "Uploaden van het torrent-bestand heeft voorrang boven de URL van de torrent",
+			"sequential-download": "Sequentieel downloaden:"
 		},
 		"system-config": {
 			"title": "Server Instellingen",
@@ -219,7 +220,8 @@
 				"color": "Color",
 				"actions": "Actions",
 				"import-confirm": "Do you want to import labels? This overrides the current configuration."
-			}
+			},
+			"sequential_download": "Standaard sequentieel downloaden voor nieuwe torrents"
 		},
 		"public": {
 			"button-ok": "OK",
@@ -396,7 +398,8 @@
 				"seedRatioMode": "Seed ratio:",
 				"seedIdleMode": "Stop seeden wanneer inactief gedurende:",
 				"doneDate": "Finish Time:",
-				"seedTime": "Seed Time:"
+				"seedTime": "Seed Time:",
+				"sequential_download": "Sequentieel downloaden:"
 			},
 			"tip": {
 				"button-allow": "Download gemarkeerd(e) bestand(en)",

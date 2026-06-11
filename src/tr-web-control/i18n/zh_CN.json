@@ -68,7 +68,7 @@
 			"autoreload-enabled": "启用自动刷新",
 			"tracker-replace": "替换 Tracker",
 			"change-download-dir": "变更数据保存目录",
-      			"change-speedlimit": "变更上传和下载速度",
+			"change-speedlimit": "变更上传和下载速度",
 			"ui-mobile": "切换到移动设备界面",
 			"ui-original": "切换到原版界面",
 			"more-peers": "获取更多Peer",
@@ -137,14 +137,15 @@
 	"dialog": {
 		"torrent-add": {
 			"download-dir": "保存目录：",
-		    "used-download-dir": "常用目录：",
+			"used-download-dir": "常用目录：",
 			"torrent-url": "种子地址：",
 			"tip-torrent-url": "注：复制种子链接到列表中，多个种子用“回车”分隔。",
 			"autostart": "自动开始：",
 			"set-default-download-dir": "设为默认保存目录",
 			"upload-file": "种子文件：",
 			"nosource": "没有选择种子或没有输入URL地址",
-			"tip-title": "上传文件优先于URL"
+			"tip-title": "上传文件优先于URL",
+			"sequential-download": "顺序下载："
 		},
 		"system-config": {
 			"title": "服务器参数设置",
@@ -230,7 +231,8 @@
 			"ipInfoCustom": "额外的IP查询服务设置，可使用自定义URL，适合使用本地架设的查询服务",
 			"ipInfoCustomTips": "可用变量: <b>%ip</b>: 查询的用户IP(必需), <b>%lang</b>: tr-web-control 使用的语言代号<br/>&nbsp;&nbsp;<b>%host</b>: 域名，含端口号, <b>%hostname</b>: 域名, <b>%protocol</b>: 协议, <b>%navlang</b>: 浏览器首选的语言代号",
 			"ipInfoCountryCodeUrl": "自定义IP国家代码URL:",
-			"ipInfoDetailUrl": "自定义IP详情URL:"
+			"ipInfoDetailUrl": "自定义IP详情URL:",
+			"sequential_download": "新增种子默认顺序下载"
 		},
 		"public": {
 			"button-ok": "确定",
@@ -268,16 +270,16 @@
 			"set-error": "设置目录失败！",
 			"recheck-data": "设置完成后重新校验。"
 		},
-	    "torrent-changeSpeedLimit": {
-	      "title": "设置上传和下载",
-	      "downloadLimited": "启用最大下载速度限制：",
-	      "uploadLimited": "启用最大上传速度限制：",
-	      "peer-limit": "最大链接数：",
-	      "seedRatioMode": "当种子的分享率达到这个数时，自动停止做种：",
-	      "seedIdleMode": "当种子超过这个时间没有流量时，自动停止做种：",
-	      "doneDate": "完成时间：",
-	      "seedTime": "做种时间："
-	    },
+		"torrent-changeSpeedLimit": {
+			"title": "设置上传和下载",
+			"downloadLimited": "启用最大下载速度限制：",
+			"uploadLimited": "启用最大上传速度限制：",
+			"peer-limit": "最大链接数：",
+			"seedRatioMode": "当种子的分享率达到这个数时，自动停止做种：",
+			"seedIdleMode": "当种子超过这个时间没有流量时，自动停止做种：",
+			"doneDate": "完成时间：",
+			"seedTime": "做种时间："
+		},
 		"system-replaceTracker": {
 			"title": "替换 Tracker 地址",
 			"old-tracker": "原 Tracker：",
@@ -446,7 +448,8 @@
 				"seedRatioMode": "当种子的分享率达到这个数时，自动停止做种：",
 				"seedIdleMode": "当种子超过这个时间没有流量时，自动停止做种：",
 				"doneDate": "完成时间：",
-				"seedTime": "做种时间："
+				"seedTime": "做种时间：",
+				"sequential_download": "顺序下载："
 			},
 			"tip": {
 				"button-allow": "下载已选择的文件",

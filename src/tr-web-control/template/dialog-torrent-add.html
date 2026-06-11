@@ -30,12 +30,18 @@
 						<hr/>
 					</td>
 				</tr>
-				<tr>
-					<td class="title"><span id="dialog-torrent-add-autostart"></span></td>
-					<td>
-						<input type="checkbox" id="chkautostart" style="width:20px;"/><label for="chkautostart" id="dialog-torrent-add-tip-autostart"></label>
-					</td>
-				</tr>
+			<tr>
+				<td class="title"><span id="dialog-torrent-add-autostart"></span></td>
+				<td>
+					<input type="checkbox" id="chkautostart" style="width:20px;"/><label for="chkautostart" id="dialog-torrent-add-tip-autostart"></label>
+				</td>
+			</tr>
+			<tr>
+				<td class="title"><span id="dialog-torrent-add-sequential-download-label"></span></td>
+				<td>
+					<input type="checkbox" id="chksequential" style="width:20px;"/>
+				</td>
+			</tr>
 			</table>
 		</div>
 
@@ -66,6 +72,7 @@
 		$.each(title, function(i, item){
 			thisDialog.find("#dialog-torrent-add-"+item).html(system.lang.dialog["torrent-add"][item]);
 		});
+		thisDialog.find("#dialog-torrent-add-sequential-download-label").html(system.lang.dialog["torrent-add"]["sequential-download"] || "Sequential Download");
 
 		title = "button-ok,button-cancel".split(",");
 		$.each(title, function(i, item){
@@ -99,6 +106,7 @@
     }
 
 		thisDialog.find("#chkautostart").prop("checked", system.serverConfig["start-added-torrents"]);
+		thisDialog.find("#chksequential").prop("checked", system.serverConfig["sequential_download"]);
 		thisDialog.find("#download-dir").combobox();
 
 		// label 
@@ -166,6 +174,7 @@
 			var isnewdir = system.serverConfig["download-dir"]!=dir;
 			var isupload = thisDialog.find("#torrent_upload_file")[0].value!="";
 			var autostart = thisDialog.find("#chkautostart").prop("checked");
+			var sequential = thisDialog.find("#chksequential").prop("checked");
 
 			if (autostart!=system.serverConfig["start-added-torrents"])
 			{
@@ -219,7 +228,7 @@
 							system.saveConfig();
 						}
 						system.reloadData();
-					});
+					},sequential);
 					return;
 				}
 				// New directory, but no hooks to save when you first save the directory
@@ -245,7 +254,7 @@
 			else if (url!="")
 			{
 				var urls = url.split("\n");
-				system.addTorrentsToServer(urls,urls.length,autostart,dir,labelPage.getLabels());
+				system.addTorrentsToServer(urls,urls.length,autostart,dir,labelPage.getLabels(),sequential);
 				urls = null;
 				thisDialog.dialog("close");
 			}

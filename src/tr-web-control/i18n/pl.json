@@ -144,7 +144,8 @@
 			"set-default-download-dir": "Zapisz jako katalog domyślny",
 			"upload-file": "Pliki torrent:",
 			"nosource": "Brak pliku torrent bądź linka.",
-			"tip-title": "Dodaj plik torrent i rozpocznij pobieranie"
+			"tip-title": "Dodaj plik torrent i rozpocznij pobieranie",
+			"sequential-download": "Pobieranie sekwencyjne:"
 		},
 		"system-config": {
 			"title": "Konfiguracja serwera",
@@ -230,7 +231,8 @@
 			"ipInfoCustom": "Dodatkowe ustawienia usługi zapytań IP, można użyć niestandardowego adresu URL, odpowiedniego dla lokalnych usług zapytań",
 			"ipInfoCustomTips": "Dostępne zmienne: <b>%ip</b>: peer ip (wymagane), <b>%lang</b>: kod języka używanego przez tr-web-control<br/>&nbsp;&nbsp;<b>%host</b>: host, <b>%hostname</b>: nazwa hosta, <b>%protocol</b>: protokół, <b>%navlang</b>: kod języka nawigacji",
 			"ipInfoCountryCodeUrl": "URL pomocny w uzyskaniu kodu kraju:",
-			"ipInfoDetailUrl": "URL pomocny w uzyskaniu szczegółowych informacji:"
+			"ipInfoDetailUrl": "URL pomocny w uzyskaniu szczegółowych informacji:",
+			"sequential_download": "Domyślne pobieranie sekwencyjne dla nowych torrentów"
 		},
 		"public": {
 			"button-ok": "OK",
@@ -444,7 +446,8 @@
 				"seedRatioMode": "Proporcje do wyseedowania dla tego torrenta:",
 				"seedIdleMode": "Wysyłanie torrenta zostanie zatrzymane, jeżeli nie będzie wysyłany przez (minut):",
 				"doneDate": "Czas zakończenia:",
-				"seedTime": "Czas 'wysiewu':"
+				"seedTime": "Czas 'wysiewu':",
+				"sequential_download": "Pobieranie sekwencyjne:"
 			},
 			"tip": {
 				"button-allow": "Pobierz zaznaczone pliki",

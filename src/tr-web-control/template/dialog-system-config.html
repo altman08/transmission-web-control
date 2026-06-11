@@ -31,6 +31,10 @@
                                 id="system-config-start-added-torrents" for="start-added-torrents"></label></td>
                     </tr>
                     <tr>
+                        <td colspan="2"><input id="sequential_download" type="checkbox" style="width:16px;"/><label
+                                id="system-config-sequential_download" for="sequential_download" system-lang="dialog['system-config']['sequential_download']"></label></td>
+                    </tr>
+                    <tr>
                         <td colspan="2">
                             <hr/>
                         </td>
@@ -576,7 +580,7 @@
       // 初始化参数值
       initConfigValue: function () {
         // Replace system settings
-        var title = ('incomplete-dir-enabled,rename-partial-files,start-added-torrents,download-queue-enabled,seed-queue-enabled' +
+        var title = ('incomplete-dir-enabled,rename-partial-files,start-added-torrents,sequential_download,download-queue-enabled,seed-queue-enabled' +
           ',peer-port-random-on-start,speed-limit-down-enabled,speed-limit-up-enabled,alt-speed-enabled,idle-seeding-limit-enabled' +
           ',port-forwarding-enabled,utp-enabled,dht-enabled,lpd-enabled,pex-enabled,blocklist-enabled,seedRatioLimited,queue-stalled-enabled' +
           ',alt-speed-time-enabled,script-torrent-done-enabled'

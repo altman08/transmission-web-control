@@ -2517,7 +2517,7 @@ var system = {
 		return '<div class="torrent-progress" title="' + progress + '"><div class="torrent-progress-text">' + progress + '</div><div class="torrent-progress-bar ' + className + '" style="width:' + progress + ';"></div></div>';
 	},
 	// Add torrent
-	addTorrentsToServer: function (urls, count, autostart, savepath, labels) {
+	addTorrentsToServer: function (urls, count, autostart, savepath, labels, sequential) {
 		//this.config.autoReload = false;
 		var index = count - urls.length;
 		var url = urls.shift();
@@ -2531,10 +2531,10 @@ var system = {
 		}
 		this.showStatus(this.lang.system.status.queue + (index + 1) + "/" + (count) + "<br/>" + url, 0);
 		transmission.addTorrentFromUrl(url, savepath, autostart, function (data) {
-			system.addTorrentsToServer(urls, count, autostart, savepath, labels);
+			system.addTorrentsToServer(urls, count, autostart, savepath, labels, sequential);
 			if(labels != null && data.hashString != null)
 				system.saveLabelsConfig(data.hashString, labels);
-		});
+		}, sequential);
 	},
 	// Starts / pauses the selected torrent
 	changeSelectedTorrentStatus: function (status, button, method) {
@@ -2996,6 +2996,10 @@ var system = {
 
 						break;
 
+					case "sequential_download":
+						system.panel.attribute.find("#sequential_download").prop("checked", value === true || value == 1);
+						break;
+
 					default:
 						system.panel.attribute.find("#" + key).val(value);
 						system.panel.attribute.find("#" + key).numberspinner("setValue", value);
@@ -3221,12 +3225,12 @@ var system = {
 		window.localStorage[this.configHead] = JSON.stringify(this.userConfig);
 	},
 	// Upload the torrent file		
-	uploadTorrentFile: function (fileInputId, savePath, paused, callback) {
+	uploadTorrentFile: function (fileInputId, savePath, paused, callback, sequential) {
 		// Determines whether the FileReader interface is supported
 		if (window.FileReader) {
 			var files = $("input[id='" + fileInputId + "']")[0].files;
 			$.each(files, function (index, file) {
-				transmission.addTorrentFromFile(file, savePath, paused, callback, files.length);
+				transmission.addTorrentFromFile(file, savePath, paused, callback, files.length, sequential);
 			});
 		} else {
 			alert(system.lang["public"]["text-browsers-not-support-features"]);

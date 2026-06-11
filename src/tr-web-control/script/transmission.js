@@ -153,7 +153,7 @@ var transmission = {
 		});
 	},
 	// 添加种子
-	addTorrentFromUrl: function(url, savepath, autostart, callback) {
+	addTorrentFromUrl: function(url, savepath, autostart, callback, sequential) {
 		// 磁性连接（代码来自原版WEBUI）
 		if (url.match(/^[0-9a-f]{40}$/i)) {
 			url = 'magnet:?xt=urn:btih:' + url;
@@ -168,6 +168,9 @@ var transmission = {
 
 		if (savepath) {
 			options.arguments["download-dir"] = savepath;
+		}
+		if (sequential !== undefined) {
+			options.arguments["sequential_download"] = sequential;
 		}
 		this.exec(options, function(data) {
 			switch (data.result) {
@@ -200,7 +203,7 @@ var transmission = {
 		});
 	},
 	// 从文件内容增加种子
-	addTorrentFromFile: function(file, savePath, paused, callback, filecount) {
+	addTorrentFromFile: function(file, savePath, paused, callback, filecount, sequential) {
 		var fileReader = new FileReader();
 
 		fileReader.onload = function(e) {
@@ -211,14 +214,17 @@ var transmission = {
 				return;
 			}
 			var metainfo = contents.substring(index + key.length);
-
+			var addArgs = {
+				metainfo: metainfo,
+				"download-dir": savePath,
+				paused: paused
+			};
+			if (sequential !== undefined) {
+				addArgs["sequential_download"] = sequential;
+			}
 			transmission.exec({
 				method: "torrent-add",
-				arguments: {
-					metainfo: metainfo,
-					"download-dir": savePath,
-					paused: paused
-				}
+				arguments: addArgs
 			}, function(data) {
 				switch (data.result) {
 					// 添加成功

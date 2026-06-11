@@ -137,14 +137,15 @@
 	"dialog": {
 		"torrent-add": {
 			"download-dir": "下載資料夾：",
-            "used-download-dir": "常用資料夾：",
+			"used-download-dir": "常用資料夾：",
 			"torrent-url": "磁力連結：",
 			"tip-torrent-url": "註：貼上磁力連結，多個磁力連結用「換行」分隔。",
 			"autostart": "自動開始：",
 			"set-default-download-dir": "設為預設儲存資料夾",
 			"upload-file": "種子檔案：",
 			"nosource": "沒有選擇種子或沒有輸入磁力連結",
-			"tip-title": "上傳檔案優先於磁力連結"
+			"tip-title": "上傳檔案優先於磁力連結",
+			"sequential-download": "循序下載："
 		},
 		"system-config": {
 			"title": "伺服器參數設定",
@@ -230,7 +231,8 @@
 			"ipInfoCustom": "額外的 IP 查詢服務設定，可使用自定義 URL，適合使用本地架設的查詢福福",
 			"ipInfoCustomTips": "可用變量：<b>%ip</b>: 查詢用戶 IP（必須），<b>%lang</b>: tr-web-control 使用的語言代碼<br/>&nbsp;&nbsp;<b>%host</b>: 域名，包含連接埠，<b>%hostname</b>: 域名，<b>%protocol</b>: 協議，<b>%navlang</b>: 瀏覽器首選的語言代碼",
 			"ipInfoCountryCodeUrl": "自定義 IP 國家代碼 URL：",
-			"ipInfoDetailUrl": "自定義 IP 詳情 URL："
+			"ipInfoDetailUrl": "自定義 IP 詳情 URL：",
+			"sequential_download": "新增種子預設循序下載"
 		},
 		"public": {
 			"button-ok": "確定",
@@ -446,7 +448,8 @@
 				"seedRatioMode": "當種子的分享率達到這個數時，自動停止做種：",
 				"seedIdleMode": "當種子超過這個時間沒有流量時，自動停止做種：",
 				"doneDate": "完成時間：",
-				"seedTime": "做種時間："
+				"seedTime": "做種時間：",
+				"sequential_download": "循序下載："
 			},
 			"tip": {
 				"button-allow": "下載已選取的檔案",

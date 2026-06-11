@@ -142,7 +142,8 @@
 			"set-default-download-dir": "기본 폴더 지정",
 			"upload-file": "토렌트 파일:",
 			"nosource": "토렌트 파일이나 URL이 없음.",
-			"tip-title": "업로드는 토렌트 URL에 우선합니다"
+			"tip-title": "업로드는 토렌트 URL에 우선합니다",
+			"sequential-download": "순차 다운로드:"
 		},
 		"system-config": {
 			"title": "서버 설정",
@@ -219,7 +220,8 @@
 				"color": "Color",
 				"actions": "Actions",
 				"import-confirm": "Do you want to import labels? This overrides the current configuration."
-			}
+			},
+			"sequential_download": "새 토렌트 기본 순차 다운로드"
 		},
 		"public": {
 			"button-ok": "확인",
@@ -396,7 +398,8 @@
 				"seedRatioMode": "토렌트 시드 비율：",
 				"seedIdleMode": "토렌트가 오래동안 유휴상태이면, 정지합니다 ：",
 				"doneDate": "Finish Time:",
-				"seedTime": "Seed Time:"
+				"seedTime": "Seed Time:",
+				"sequential_download": "순차 다운로드:"
 			},
 			"tip": {
 				"button-allow": "다운로드 확인한 파일",

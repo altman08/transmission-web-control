@@ -142,7 +142,8 @@
 			"set-default-download-dir": "Diretório padrão",
 			"upload-file": "Ficheiros Torrent:",
 			"nosource": "Nenhum ficheiro ou url Torrent.",
-			"tip-title": "Os ficheiros Torrent têm preferência sobre URLs"
+			"tip-title": "Os ficheiros Torrent têm preferência sobre URLs",
+			"sequential-download": "Transferência sequencial:"
 		},
 		"system-config": {
 			"title": "Configuração do servidor",
@@ -219,7 +220,8 @@
 				"color": "Color",
 				"actions": "Actions",
 				"import-confirm": "Do you want to import labels? This overrides the current configuration."
-			}
+			},
+			"sequential_download": "Transferência sequencial predefinida para novos torrents"
 		},
 		"public": {
 			"button-ok": "Aceptar",
@@ -396,7 +398,8 @@
 				"seedRatioMode": "Proporção de envio:",
 				"seedIdleMode": "O semeamento será interrompido se inativos por:",
 				"doneDate": "Finish Time:",
-				"seedTime": "Seed Time:"
+				"seedTime": "Seed Time:",
+				"sequential_download": "Transferência sequencial:"
 			},
 			"tip": {
 				"button-allow": "Baixar os ficheiros selecionados",

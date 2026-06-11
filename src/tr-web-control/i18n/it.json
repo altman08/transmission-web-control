@@ -142,7 +142,8 @@
 			"set-default-download-dir": "Imposta come cartella predefinita",
 			"upload-file": "File Torrent:",
 			"nosource": "Nessun file torrent o URL.",
-			"tip-title": "Il file torrent ha la precedenza sul URL"
+			"tip-title": "Il file torrent ha la precedenza sul URL",
+			"sequential-download": "Download sequenziale:"
 		},
 		"system-config": {
 			"title": "Configurazione del Server",
@@ -219,7 +220,8 @@
 				"color": "Colori",
 				"actions": "Azioni",
 				"import-confirm": "Sei sicuro di voler importare le etichette? Questa operazione sovrascrive la configurazione esistente."
-			}
+			},
+			"sequential_download": "Download sequenziale predefinito per i nuovi torrent"
 		},
 		"public": {
 			"button-ok": "OK",
@@ -294,7 +296,7 @@
 			"title": "Imposta Etichette Utente",
 			"available": "Disponibile:",
 			"selected": "Selezione:"
-			},
+		},
 		"export-config": {
 			"title": "Seleziona le categorie da esportare",
 			"option-all": "Tutte le configurazioni",
@@ -407,7 +409,8 @@
 				"seedRatioMode": "Rapporto di condivisione configurato:",
 				"seedIdleMode": "Ferma seeding per i torrent senza attività da:",
 				"doneDate": "Terminato il:",
-				"seedTime": "In seed per:"
+				"seedTime": "In seed per:",
+				"sequential_download": "Download sequenziale:"
 			},
 			"tip": {
 				"button-allow": "Scarica i file selezionati",

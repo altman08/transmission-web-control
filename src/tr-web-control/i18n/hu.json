@@ -142,7 +142,8 @@
 			"set-default-download-dir": "Beállítás alpértelmezett letöltési mappaként",
 			"upload-file": "Torrent fájl(ok):",
 			"nosource": "Nincs torrent fájl vagy URL.",
-			"tip-title": "Feltöltött torrentek elsőbbséget élveznek az URL-ben megadottakkal szemben!"
+			"tip-title": "Feltöltött torrentek elsőbbséget élveznek az URL-ben megadottakkal szemben!",
+			"sequential-download": "Szekvenciális letöltés:"
 		},
 		"system-config": {
 			"title": "Szerver beállítás",
@@ -219,7 +220,8 @@
 				"color": "Color",
 				"actions": "Actions",
 				"import-confirm": "Do you want to import labels? This overrides the current configuration."
-			}
+			},
+			"sequential_download": "Alapértelmezett szekvenciális letöltés az új torrentekhez"
 		},
 		"public": {
 			"button-ok": "OK",
@@ -396,7 +398,8 @@
 				"seedRatioMode": "Seed a következő arány eléréséig：",
 				"seedIdleMode": "Seed leállítása ha a torrent ennyi ideig tétlen：",
 				"doneDate": "Finish Time:",
-				"seedTime": "Seed Time:"
+				"seedTime": "Seed Time:",
+				"sequential_download": "Szekvenciális letöltés:"
 			},
 			"tip": {
 				"button-allow": "Kijelölt fájl(ok) letöltése",

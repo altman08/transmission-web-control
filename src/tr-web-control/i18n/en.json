@@ -144,7 +144,8 @@
 			"set-default-download-dir": "Set as default directory",
 			"upload-file": "Torrent file(s):",
 			"nosource": "No torrent file or URL.",
-			"tip-title": "Uploading the torrent file takes precedence over the torrent URL"
+			"tip-title": "Uploading the torrent file takes precedence over the torrent URL",
+			"sequential-download": "Sequential Download:"
 		},
 		"system-config": {
 			"title": "Server Config",
@@ -230,7 +231,8 @@
 			"ipInfoCustom": "Additional IP query service settings, custom URL can be used, suitable for local query services",
 			"ipInfoCustomTips": "Available variables: <b>%ip</b>: peer IP (required), <b>%lang</b>: language code use by tr-web-control<br/>&nbsp;&nbsp;<b>%host</b>: host, <b>%hostname</b>: hostname, <b>%protocol</b>: protocol, <b>%navlang</b>: navigation language code",
 			"ipInfoCountryCodeUrl": "URL to get country code:",
-			"ipInfoDetailUrl": "URL to get details:"
+			"ipInfoDetailUrl": "URL to get details:",
+			"sequential_download": "Default sequential download for new torrents"
 		},
 		"public": {
 			"button-ok": "OK",
@@ -444,7 +446,8 @@
 				"seedRatioMode": "Seed ratio for torrents to use:",
 				"seedIdleMode": "Torrents we're seeding will be stopped if they're idle for this long:",
 				"doneDate": "Finish Time:",
-				"seedTime": "Seed Time:"
+				"seedTime": "Seed Time:",
+				"sequential_download": "Sequential Download:"
 			},
 			"tip": {
 				"button-allow": "Download checked file(s)",
