@@ -44,6 +44,47 @@ chown sc-transmission:sc-transmission /var/packages/transmission/target/share/tr
 chmod 774 /var/packages/transmission/target/share/transmission/web/* -R
 ```
 
+## 开发说明
+
+### 目录结构
+项目的 JS 源文件位于 `src/tr-web-control/script/`，但 `src/index.html` 实际加载的是 `src/tr-web-control/script/min/` 下的压缩版本。两个目录的对应关系如下：
+
+| 源文件 | 压缩文件（实际加载） |
+|--------|---------------------|
+| `script/transmission.js` | `script/min/transmission.min.js` |
+| `script/transmission.torrents.js` | `script/min/transmission.torrents.min.js` |
+| `script/system.js` | `script/min/system.min.js` |
+| `script/FileSaver.js` | `script/min/FileSaver.min.js` |
+| `script/public.js` | `script/min/public.min.js` |
+| `script/system.mobile.js` | `script/min/system.mobile.min.js` |
+
+### ⚠️ 修改代码后必须同步 min 文件
+
+修改 `script/*.js` 源文件后，**必须**将改动同步到对应的 `min/` 文件，否则浏览器不会加载最新代码。
+
+需要先安装 `uglify-js`：
+```bash
+npm install -g uglify-js
+```
+
+然后执行以下命令压缩并同步：
+```bash
+cd src/tr-web-control/script
+uglifyjs transmission.js          -o min/transmission.min.js          -c -m
+uglifyjs transmission.torrents.js -o min/transmission.torrents.min.js -c -m
+uglifyjs system.js                -o min/system.min.js                -c -m
+```
+
+### 打包发布
+
+项目根目录提供了 `build.sh` 打包脚本，会自动完成压缩、剔除冗余源文件、打包三步：
+
+```bash
+bash build.sh
+```
+
+执行后在项目根目录生成 `transmission-web-control.tar.gz`，解压后将内容部署到 Transmission 的 web 目录即可。
+
 ## 更新日志 [查看](https://github.com/ronggang/transmission-web-control/blob/master/CHANGELOG.md)
 
 ## 项目日常维护
